@@ -1,0 +1,19 @@
+{
+  "name": "mern-testing-app",
+  "version": "1.0.0",
+  "scripts": {
+    "install-all": "npm install && cd client && npm install && cd ../server && npm install",
+    "test": "npm run test:server && npm run test:client",
+    "test:unit": "npm run test:server:unit && npm run test:client:unit",
+    "test:integration": "npm run test:server:integration && npm run test:client:integration",
+    "test:e2e": "cd client && npm run test:e2e",
+    "test:server": "cd server && npm test",
+    "test:client": "cd client && npm test",
+    "test:server:unit": "cd server && npm run test:unit",
+    "test:server:integration": "cd server && npm run test:integration",
+    "test:client:unit": "cd client && npm run test:unit",
+    "test:client:integration": "cd client && npm run test:integration",
+    "test:coverage": "npm run test:server:coverage && npm run test:client:coverage",
+    "setup-test-db": "cd server && npm run setup-test-db"
+  }
+}
